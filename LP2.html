@@ -9,17 +9,19 @@
 </head>
 <body>
     <header id="header">
-        <img id="logo" src="image/Let'sCodelogo.jpg"> 
+        <img id="WAO_Logo" src="image/Let'sCodelogo.jpg"> 
 
-        <button id="Logbutton">ログイン</button>
-        <button id="MRbutton">会員登録</button>
+        <button type="button" onclick="location.href='https://wao-letscode.com/accounts/signup/'" id="Registert_button" >会員登録</button>
     </header>
 
 
     <main>
-        <p id="First_Sentence">
-            5秒ではじめるプログラミング講座
-        </p> 
+        <div id="First_Topic">
+            <img id="Photo_Five_Logo" src="image/5_logo.png">
+            <p id="First_Sentence">
+                秒ではじめるプログラミング講座
+            </p> 
+        </div>
 
         <img id="First_Photo" src="image/let's_code写真educ_img-letscode.jpg">
 
@@ -28,30 +30,31 @@
                 WAO Let's Code
             </h1>
             <p id="Introduce_Sentence_Text">
-                プログラミング初心者だが、WEB制作に興味がありテキストプログラミングを学びたいと考えている学生や仕事でテキストプログラミングのスキルが必要となり学ぶ必要があるが、何から手をつければよいかわからず困っている社会人へ向けたオンラインプログラミング学習サイトです。
+                WAO Let's Code はプログラミング初心者だが、WEB制作に興味がありテキストプログラミングを学びたいと考えている学生や仕事でテキストプログラミングのスキルが必要となり学ぶ必要があるが、何から手をつければよいかわからず困っている社会人へ向けたオンラインプログラミング学習サービスです。
             </p>
         </div>
 
 
-        <div class="Text_Introduction">
+        <div class="Introduction_Topic">
             <div class="Text_Introduction_Sentence">
-                <h2>
-                    京大出身のエンジニアが<br>監修したテキスト
+                <h2 class="Introduction_Sentence_Headline">
+                    現役のエンジニアが監修したテキスト
                 </h2>
                 <ul id="Text_Introduction_Sentence_Text">
                     <li>分かりやすいテキスト</li>
+                    <li>HTML・CSS・JavaScript が学べる</li>
                     <li>動画付きで理解が深まる</li>
                     <li>同じページでコードを書きながら学べる</li>
                 </ul>
                                     
             </div>
     
-            <img id="Text_Photo" src="image/教材スクリーンショット2022-10-18 110200.png">
+            <img class="Three_Photo"  src="image/教材スクリーンショット2022-10-18 110200.png">
         </div>
 
-        <div class="Exercises_Introduction">
+        <div class="Introduction_Topic">
             <div class="Exercises_Introduction_Sentence">
-                <h2>
+                <h2 class="Introduction_Sentence_Headline">
                     多種多様な演習
                 </h2>
                 <ul id="Exercises_Introduction_Sentence_Text">
@@ -62,26 +65,26 @@
                 </ul>
             </div>
                 
-            <img id="Exercises_Photo" src="image/演習スクリーンショット 2022-10-18 110837.png">
+            <img class="Three_Photo" src="image/演習スクリーンショット 2022-10-18 110837.png">
         </div>
 
-        <div class="Option_Introduction">
+        <div class="Introduction_Topic">
             <div class="Option_Introduction_Sentence">
-                <h2>
+                <h2 class="Introduction_Sentence_Headline">
                     学習を助ける機能
                 </h2>
-                <dl id="Option_Introduction_Sentence_text">
-                    <div class="Option_Introduction_Sentence_text_First">
+                <dl id="Option_Introduction_Sentence_Text">
+                    <div class="Option_Introduction_Sentence_text">
                         <dt>・コードチェック</dt>
                         <dd>→解説と見比べて間違いに気づける</dd>
                     </div>
 
-                    <div class="Option_Introduction_Sentence_text_Second">
+                    <div class="Option_Introduction_Sentence_text">
                         <dt>・プレイグランド</dt>
                         <dd>→自由にコードがかける</dd>
                     </div>
 
-                    <div class="Option_Introduction_Sentence_text_Third">
+                    <div class="Option_Introduction_Sentence_text">
                         <dt>・要復習チェック</dt>
                         <dd>→復習すべき単元を簡単に記録できる</dd> 
                         
@@ -89,7 +92,7 @@
                 </dl>
               
             </div>
-            <img id="Option_Photo" src="image/コードチェック２スクリーンショット 2022-10-18 112533.png">
+            <img class="Three_Photo" src="image/コードチェック２スクリーンショット 2022-10-18 112533.png">
         </div>
 
 
@@ -106,53 +109,62 @@
                     </p>
                 </div>
 
-                <button id="Tryal_button">
+                <button type="button" onclick="location.href='https://wao-letscode.com/lesson/%E4%BD%93%E9%A8%93/1/1/'" class="Price_button">
                     Let's Code 体験編へ
                 </button>
             </div>
     
-            <div class="Price_of_Introdudtory">
-                <h3>入門編</h3>
-                <p>
-                    会員登録すれば
-                    無料！！
-                </p>
-                <button id="FMRbutton">
-                    Let’s Code 無料会員登録へ
+            <div class="Price_of_Introductory">
+                <div class="Price_of_Introductory_Sentence">
+                    <h3 id="Price_of_Introductory_Sentence_Headline">
+                        入門編
+                    </h3>
+                    <p id="Price_of_Introductory_Sentence_Text">
+                        会員登録すれば<br>
+                        無料！！
+                    </p>
+                </div>
+                <button type="button" onclick="location.href='https://wao-letscode.com/accounts/signup/'" class="Price_button">
+                    Let’s Code 会員登録へ
                 </button>
             </div>
     
             <div class="Price_of_Others">
-                <h3>
-                    速習編、基本編、
-                    実践編、番外編
-                </h3>
-                <p>
-                    初月は500円/月
-                    ２カ月目以降は
-                    1000円/月
-                </p>
-                <button id="PMRbutton">
-                    Let’s Code 有料会員登録へ
+                <div class="Price_of_Others_Sentence">
+                    <h3 id="Price_of_Others_Sentence_Headline">
+                        速習編、基本編、<br>
+                        実践編、番外編
+                    </h3>
+                    <p id="Price_of_Others_Sentence_Text">
+                        初月は500円/月<br>
+                        ２カ月目以降は<br>
+                        1000円/月
+                    </p>
+                </div>
+                <button type="button" onclick="location.href='https://wao-letscode.com/accounts/signup/'" class="Price_button">
+                    Let’s Code 会員登録へ
                 </button>
             </div>
         </div>
 
 
 
-
-        <p>
-            無料講座18回！！
-            今すぐ始めよう！
-        </p>
-
-        <button id="Start_Lets_Code">
-            Let’s Code をはじめる
-        </button>
+        <div class="Last_Topic">
+            <p id="Last_Sentence">
+                無料講座18回！！<br>
+                今すぐ始めよう！
+            </p>
+    
+            <button type="button" onclick="location.href='https://wao-letscode.com/'" id="Start_Lets_Code">
+                Let’s Code をはじめる
+            </button>
+        </div>
 
         <p id="Twitter_Introduction">
-            WAO Let’s Code の公式Twitterをフォローして情報を得よう
+           <a href="https://mobile.twitter.com/let_wao" target="_blank">WAO Let’s Code の公式Twitter</a> をフォローして学習に活かそう
         </p>
+
+
     </main>
     
 
